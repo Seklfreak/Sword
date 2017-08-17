@@ -14,7 +14,7 @@ extension Endpoint {
     switch self {
 
       case .gateway:
-        return ("/gateway/bot", .get)
+        return ("/gateway", .get)
 
       case let .addPinnedChannelMessage(channel, message):
         return ("/channels/\(channel)/pins/\(message)", .post)
